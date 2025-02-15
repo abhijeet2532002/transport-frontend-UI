@@ -1,0 +1,58 @@
+@import '../../style.scss';
+
+
+nav {
+    @include box(100%, rem(64));
+    background-color: var(--black);
+
+    a {
+        border-radius: rem(30);
+        color: var(--white);
+        padding: 0 16px;
+        font-size: rem(14);
+        @include flex("", center, center);
+
+        &:hover {
+            background-color: var(--black-300);
+        }
+    }
+
+    .navbar-brand {
+        color: var(--white);
+    }
+
+    .nav-link:hover,
+    .navbar-brand:hover {
+        color: var(--white) !important;
+    }
+
+    .collapse ul {
+        gap: rem(14);
+    }
+
+    .collapse ul li a {
+        font-size: rem(14);
+        color: var(--white);
+        border-radius: rem(30);
+
+        &:hover {
+            background-color: var(--black-300);
+        }
+    }
+
+    .right {
+        color: var(--black);
+        display: flex;
+
+        .btn {
+            background-color: var(--white);
+            border-radius: rem(30);
+            border: none;
+
+            &:hover {
+                background-color: var(--white);
+            }
+        }
+
+    }
+}
