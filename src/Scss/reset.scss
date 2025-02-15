@@ -1,0 +1,71 @@
+// Import Bootstrap (Make sure Bootstrap is installed)
+@import "bootstrap/scss/bootstrap";
+
+// Box Sizing Reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Typography Reset
+html,
+body {
+    font-family: sans-serif; // Use a generic sans-serif font
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000; // Set text color to black
+    background-color: #f8f9fa;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Reset Headings (h1-h6)
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+// Reset Paragraph
+p {
+    padding: 0;
+    margin: 0;
+}
+
+// Reset Anchor & Link Tags (React Router)
+a,
+Link {
+    text-decoration: none;
+    color: black;
+}
+
+// Reset Input Fields
+input,
+textarea {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+// Reset Buttons
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+// Additional Bootstrap Overrides (if needed)
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}

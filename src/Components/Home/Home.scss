@@ -1,0 +1,73 @@
+@import '../../style.scss';
+
+.home_container {
+    // min-height: 100vh;
+    // height: rem(680);
+    padding: rem(64);
+
+    .left {
+        .card-body {
+            gap: rem(36);
+
+            .currier_icon {
+                @include box(rem(40), rem(40));
+                background-color: var(--box-bg);
+                border-radius: rem(8);
+                color: var(--black-200);
+                // padding: rem(14);
+                @include flex("", center, center)
+            }
+
+            .form_div {
+                display: flex;
+            
+                .picLocation {
+                    border-radius: rem(8);
+                    // padding: 10px;
+                    border: rem(1) solid rgba(40, 39, 39, 0.164);
+                }
+                input {
+                    height: rem(47);
+                    border: none;
+                    border-radius: rem(8);
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .login_not{
+                    color: var(--balck);
+                }
+                .select{
+                    background-color: var(--black);
+                    color: var(--white);
+                    padding: 5px rem(30);
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+    .right {
+        height: rem(576);
+    }
+
+    .suggesion{
+        .image_con{
+            display: grid;
+            grid-template-rows: repeat(1,2fr);
+            grid-template-columns: repeat(3,2fr);
+            gap: 30px;
+            .item{
+                background-color: lightblue;
+                height: 200px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+}
